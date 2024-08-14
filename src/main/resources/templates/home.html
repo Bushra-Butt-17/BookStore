@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Book Store</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .navbar-nav .nav-link, .nav-link-register {
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover, .nav-link-register:hover {
+            color: #ffc107 !important;
+        }
+        .hero-section {
+            background-color: #343a40;
+            color: white;
+            padding: 50px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .image-grid .category {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1 1 calc(33% - 20px);
+            box-sizing: border-box;
+        }
+        .image-grid img {
+            width: 100%;
+            border: 3px solid white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .image-grid h5 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .image-grid p {
+            font-size: 1rem;
+            color: #555;
+            margin: 0;
+        }
+        .btnn-custom {
+            background-color: #ff7f50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btnn-custom:hover {
+            background-color: #ff6347;
+            transform: scale(1.05);
+            color: #fff;
+        }
+        .btnn-custom:active {
+            background-color: #e5533d;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Book Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="available_books">Available Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="my_books">My Books</a>
+                </li>
+            </ul>
+            <div>
+                <a class="btn btnn-custom" href="book_register">New Book Register</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container text-center hero-section">
+    <h1>Discover Your Next Great Read</h1>
+    <p>Welcome to Book Haven, your local sanctuary for book lovers! Nestled in the heart of downtown, our cozy bookstore is a haven for readers of all ages and interests. Whether you’re seeking the latest bestsellers, timeless classics, or hidden gems, our carefully curated selection has something for everyone. We pride ourselves on fostering a warm, inviting atmosphere where you can explore, discover, and lose yourself in the magic of books. Our knowledgeable staff is always on hand to offer personalized recommendations and help you find your next great read. Join us at Book Haven, where every visit is a new chapter in your literary journey.</p>
+</div>
+<div class="container">
+    <h2 class="text-center mb-4">Explore Our Curated Collections</h2>
+    <div class="image-grid">
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1626618012641-bfbca5a31239?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZmljdGlvbnxlbnwwfHwwfHx8MA%3D%3D" alt="Fiction">
+            <h5>Fiction</h5>
+            <p>Immerse in imaginative worlds and captivating stories.</p>
+        </div>
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1627793741864-1a9ec3ef2ba0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm9uJTIwZmljdGlvbnxlbnwwfHwwfHx8MA%3D%3D" alt="Non-Fiction">
+            <h5>Non-Fiction</h5>
+            <p>Real-life stories, insightful biographies, and more.</p>
+        </div>
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8TXlzdGVyeSUyMCUyNiUyMFRocmlsbGVyJTIwYm9va3xlbnwwfHwwfHx8MA%3D%3D" alt="Mystery & Thriller">
+            <h5>Mystery & Thriller</h5>
+            <p>Gripping mysteries and thrillers to keep you hooked.</p>
+        </div>
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1614544048536-0d28caf77f41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8RmFudGFzeSUyMGJvb2t8ZW58MHx8MHx8fDA%3D" alt="Fantasy & Science Fiction">
+            <h5>Fantasy & Science Fiction</h5>
+            <p>Epic adventures and futuristic worlds.</p>
+        </div>
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1599276188787-63e64b366e9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJvbWFuY2UlMjBib29rfGVufDB8fDB8fHww" alt="Romance">
+            <h5>Romance</h5>
+            <p>Heartwarming and passionate love stories.</p>
+        </div>
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1533561304446-88a43deb6229?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Q2hpbGRyZW4lMjBCb29rfGVufDB8fDB8fHww" alt="Children's Books">
+            <h5>Children’s Books</h5>
+            <p>Enchanting stories for young minds.</p>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
