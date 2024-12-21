@@ -35,7 +35,7 @@ The directory structure of this project is as follows:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Bushra-Butt-17/bookstore-spring-boot.git
+   git clone https://github.com/Bushra-Butt-17/BookStore.git
    cd bookstore-spring-boot
    ```
 
