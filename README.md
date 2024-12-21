@@ -1,9 +1,12 @@
 
-# Bookstore Spring Boot Application
 
-This is a simple Bookstore web application built using Spring Boot. It allows users to view, add, update, and delete books in an online store.
+---
 
-## Project Structure
+# 📚 Bookstore Spring Boot Application
+
+This is a simple **Bookstore** web application built using **Spring Boot**. It allows users to **view**, **add**, **update**, and **delete** books in an online store.
+
+## 🗂️ Project Structure
 
 The directory structure of this project is as follows:
 
@@ -22,28 +25,28 @@ The directory structure of this project is as follows:
 - pom.xml               # Maven project configuration file
 ```
 
-## Requirements
+## 📝 Requirements
 
-- Java 11 or later
-- Maven 3.6.3 or later
-- Spring Boot 2.x or later
+- **Java 11 or later** ☕
+- **Maven 3.6.3 or later** ⚙️
+- **Spring Boot 2.x or later** 🚀
 
-## Installation
+## 🔧 Installation
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   git clone https://github.com/Bushra-Butt-17/bookstore-spring-boot.git
+   cd bookstore-spring-boot
    ```
 
 2. **Build the project**:
-   Using Maven Wrapper (recommended):
+   Using **Maven Wrapper** (recommended):
    ```bash
    ./mvnw clean install   # For Linux/Unix
    mvnw.cmd clean install  # For Windows
    ```
 
-   Alternatively, you can use Maven directly if it’s installed:
+   Alternatively, you can use **Maven** directly if it’s installed:
    ```bash
    mvn clean install
    ```
@@ -55,22 +58,22 @@ The directory structure of this project is as follows:
    mvnw.cmd spring-boot:run  # For Windows
    ```
 
-   The application will start on `http://localhost:8080`.
+   The application will start on `http://localhost:8080` 🌐.
 
-## Endpoints
+## 🔑 Endpoints
 
-- `GET /books`: Get the list of all books
-- `POST /books`: Add a new book
-- `PUT /books/{id}`: Update a book's details
-- `DELETE /books/{id}`: Delete a book from the store
+- `GET /books` 📚: Get the list of all books
+- `POST /books` ➕: Add a new book
+- `PUT /books/{id}` ✏️: Update a book's details
+- `DELETE /books/{id}` ❌: Delete a book from the store
 
-## Configuration
+## ⚙️ Configuration
 
-The project uses default Spring Boot properties. You can customize the configuration by editing the `src/main/resources/application.properties` file.
+The project uses **default Spring Boot properties**. You can customize the configuration by editing the `src/main/resources/application.properties` file.
 
-## Testing
+## 🧪 Testing
 
-You can write unit and integration tests under the `src/test/java` directory. 
+You can write **unit** and **integration tests** under the `src/test/java` directory. 
 
 To run the tests, use the following command:
 
@@ -79,7 +82,8 @@ To run the tests, use the following command:
 mvnw.cmd test  # For Windows
 ```
 
-## License
+## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
